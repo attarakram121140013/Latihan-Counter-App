@@ -8,15 +8,14 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonMin"
+        android:id="@+id/buttonPlus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text="+"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/textCount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textCount"
@@ -25,20 +24,20 @@
         android:text="0"
         android:textSize="96dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMin"
-        app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlus"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_chainStyle="packed"/>
 
     <Button
-        android:id="@+id/buttonPlus"
+        android:id="@+id/buttonMin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
+        android:text="-"
         app:layout_constraintTop_toBottomOf="@+id/textCount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
